@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+    </root>
+    <!--设置我们项目的日志级别为INFO-->
+    <logger name="com.gizwits" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <!--设置 apache 的日志为ERROR-->
+
+    <logger name="org.apache" level="ERROR"/>
+    <logger name="ch.qos.logback" level="ERROR"/>
+</configuration>
