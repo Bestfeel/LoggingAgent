@@ -18,7 +18,7 @@ public class LoggingInterceptor {
 
     private static void logger(Class clazz, String msg, Object... args) {
         Logger logger = LoggerFactory.getLogger(LoggingInterceptor.class);
-        if (clazz == null) {
+        if (clazz != null) {
             logger = LoggerFactory.getLogger(clazz);
         }
         logger.info(msg, args);
@@ -36,7 +36,7 @@ public class LoggingInterceptor {
             e.printStackTrace();
             return null;
         } finally {
-            logger(method.getDeclaringClass(), "方法调用method:{},value:{},耗时:{}", method, Arrays.toString(args), (System.currentTimeMillis() - start));
+            logger(method.getDeclaringClass(), "方法调用method:{},value:{},耗时:{}毫秒", method, Arrays.toString(args), (System.currentTimeMillis() - start));
         }
     }
 }

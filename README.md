@@ -52,7 +52,6 @@ java  -javaagent:./LoggingCore/target/LoggingCore-with-dependencies-1.0.jar    -
 ### 输出
 
 ```
-01:58:34.363 [main] INFO com.gizwits.agent.LoggingInterceptor - 方法调用method:public void com.gizwits.logging.Logging.parse(),value:[],耗时:0
-01:58:34.461 [main] INFO com.gizwits.agent.LoggingInterceptor - 方法调用method:public java.lang.Double com.gizwits.logging.Logging.pay(double),value:[100.0],耗时:6
-
+02:26:55.853 [main] INFO com.gizwits.logging.Logging - 方法调用method:public void com.gizwits.logging.Logging.parse(),value:[],耗时:0毫秒
+02:26:55.930 [main] INFO com.gizwits.logging.Logging - 方法调用method:public java.lang.Double com.gizwits.logging.Logging.pay(double),value:[100.0],耗时:3毫秒
 ```
