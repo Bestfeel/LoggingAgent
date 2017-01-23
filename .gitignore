@@ -19,9 +19,12 @@
 LoggingAnnotation/target/
 LoggingCore/target/
 LoggingTest/target/
-
+LoggingAttach/target/
 target/
 
 
 *.iml
 
+LoggingAnnotation/src/test/java/
+LoggingAttach/src/test/
+LoggingCore/src/test/java/

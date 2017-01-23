@@ -9,6 +9,7 @@
         <module>LoggingCore</module>
         <module>LoggingAnnotation</module>
         <module>LoggingTest</module>
+        <module>LoggingAttach</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -42,7 +43,9 @@
             <artifactId>logback-classic</artifactId>
             <version>1.1.7</version>
         </dependency>
+
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

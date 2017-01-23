@@ -28,11 +28,6 @@
             <artifactId>byte-buddy</artifactId>
             <version>1.6.5</version>
         </dependency>
-        <dependency>
-            <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy-agent</artifactId>
-            <version>1.6.5</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -78,7 +73,8 @@
                     <archive>
                         <manifestEntries>
                             <Premain-Class>com.gizwits.agent.AppAgent</Premain-Class>
-                            <!--<Agent-Class>com.gizwits.agent.AppAgent</Agent-Class>-->
+                            <Agent-Class>com.gizwits.agent.AppAgent</Agent-Class>
+                            <Can-Redine-Classes>true</Can-Redine-Classes>
                             <Can-Retransform-Classes>true</Can-Retransform-Classes>
                         </manifestEntries>
                     </archive>
